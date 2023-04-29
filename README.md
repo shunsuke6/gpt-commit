@@ -5,6 +5,10 @@
 A tool to make ChatGPT create a commit message based on a `git diff`.
 This tool was originally intended for private use and has been modified for public use.
 
+Commit message creation for [conversion-commits]
+
+[convertional-commits]:(https://github.com/conventional-commits/conventionalcommits.org)
+
 ## Why use it?
 
 - Making efficient - It is easy to change when there is a log of commit messages that are easy to understand during development, but it is a burden to come up with appropriate names.
