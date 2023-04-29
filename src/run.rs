@@ -87,7 +87,7 @@ pub fn gpt_commit_run(args: Args, config: Config) -> Result<bool, RunTimeError> 
 
     match git_commit(commit_message, is_using_cached) {
         Ok(_) => Ok(true),
-        Err(err) => Err(RunTimeError::GitError(err.to_string())),
+        Err(err) => Err(RunTimeError::GitCommitError(err.to_string())),
     }
 }
 fn choose_commit(api_result_message: String) -> String {

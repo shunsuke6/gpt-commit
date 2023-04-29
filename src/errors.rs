@@ -29,6 +29,7 @@ pub enum OptionError {
 pub enum RunTimeError {
     APIError(String),
     GitError(String),
+    GitCommitError(String),
     TerminalError(Box<dyn StdError>),
 }
 
@@ -55,6 +56,7 @@ impl fmt::Display for RunTimeError {
         match *self {
             RunTimeError::APIError(ref err) => write!(f, "API defaild: {}", err.red()),
             RunTimeError::GitError(ref err) => write!(f, "git diff failed: {}", err.red()),
+            RunTimeError::GitCommitError(ref err) => write!(f, "git commit failed: {}", err.red()),
             RunTimeError::TerminalError(ref err) => {
                 write!(f, "TerminalError {}", err.to_string().red())
             }

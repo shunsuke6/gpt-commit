@@ -1,3 +1,4 @@
+use colored::Colorize;
 use crate::errors::RunTimeError;
 use std::process::{Command, Stdio};
 
@@ -33,9 +34,11 @@ pub fn git_commit(commit_message: String, is_staged: bool) -> Result<bool, RunTi
         .status()
         .expect("git commit failed");
 
-    if status.success() {
-        let err_msg = format!("commit succeeded: {}", commit_message);
-        return Err(RunTimeError::GitError(err_msg));
+    if !status.success() {
+        let err_msg = format!("{}", commit_message.red());
+        return Err(RunTimeError::GitCommitError(err_msg));
     }
+
+    println!("{} {}", "Commit success : ".blue(), commit_message.blue());
     Ok(status.success())
 }
