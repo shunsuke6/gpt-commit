@@ -1,5 +1,7 @@
 # GPT-Commit
 
+[Japanese](./README.jp.md)
+
 A tool to make ChatGPT create a commit message based on a `git diff`.
 This tool was originally intended for private use and has been modified for public use.
 
