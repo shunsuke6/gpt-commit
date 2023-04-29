@@ -10,7 +10,7 @@ repository = "https://github.com/shunsuke6/gpt-commit.git"
 
 [[bin]]
 path = "src/main.rs"
-name = "gtpcommit"
+name = "gptcommit"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
