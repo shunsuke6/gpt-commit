@@ -23,7 +23,7 @@ GPT-3.5 で動作を確認しているが精度は高くないと感じる。1/3
 ## セットアップ
 
 ```bash
-cargo insatll gpt-commit
+cargo install gpt_commit
 ```
 
 ## 使い方

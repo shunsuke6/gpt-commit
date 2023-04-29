@@ -23,7 +23,7 @@ With proper commits, the output of the commit message will be better.
 ## Installation
 
 ```bash
-cargo insatll gpt-commit
+cargo insatll gpt_commit
 ```
 
 ## Usage
