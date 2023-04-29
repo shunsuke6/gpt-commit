@@ -1,6 +1,6 @@
 [package]
 name = "gpt_commit"
-version = "0.1.0"
+version = "0.1.1"
 authors=["snsk.syk.gtobzz@gmail.com"]
 edition = "2021"
 description = "A tool to make ChatGPT create a commit message based on a `git diff`."
