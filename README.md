@@ -7,7 +7,7 @@ This tool was originally intended for private use and has been modified for publ
 
 Commit message creation for [conversion-commits]
 
-[convertional-commits]:(https://github.com/conventional-commits/conventionalcommits.org)
+[convertional-commits]: (https://github.com/conventional-commits/conventionalcommits.org)
 
 ## Why use it?
 
@@ -60,7 +60,7 @@ gptcommit run --no-cached
 
 ### Configuration
 
-以下設定を用意しています。
+The settings that are available are as follows
 
 | item     | Content                                   | Options       |
 | -------- | ----------------------------------------- | ------------- |
